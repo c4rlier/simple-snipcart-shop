@@ -13,7 +13,7 @@ $light-green: #8db38bff;
 $medium-green: #56876dff;
 $dark-green: #04724dff;
 
-$collage-image-size: 300px;
+// $collage-image-size: 300px;
 
 $backup-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
   Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
@@ -144,59 +144,59 @@ a.btn {
   }
 }
 
-.collage {
-  /* Prevent vertical gaps */
-  line-height: 0;
-  column-count: 4;
-  column-gap: 0px;
-  height: $collage-image-size * 2;
-  overflow: hidden;
-
-  img {
-    width: 100% !important;
-    height: $collage-image-size !important;
-    object-fit: cover;
-  }
-
-  &,
-  &-overlay {
-    max-width: 1500px;
-    margin: auto;
-  }
-  &-overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 141px;
-    color: $white;
-    height: $collage-image-size * 2;
-
-    background: rgba(0, 0, 0, 0.3);
-    &-text {
-      padding: 2rem;
-    }
-    h1,
-    p {
-      max-width: 1000px;
-      margin-top: 0;
-      margin-bottom: 1rem;
-    }
-  }
-
-  @include media('<=sm') {
-    column-count: 2;
-    h1 {
-      line-height: 1.15;
-      font-size: 3rem;
-    }
-  }
-  @include media('<=xs') {
-    column-count: 1;
-    h1 {
-      font-size: 2.5rem;
-    }
-  }
-}
+// .collage {
+//   /* Prevent vertical gaps */
+//   line-height: 0;
+//   column-count: 4;
+//   column-gap: 0px;
+//   height: $collage-image-size * 2;
+//   overflow: hidden;
+//
+//   img {
+//     width: 100% !important;
+//     height: $collage-image-size !important;
+//     object-fit: cover;
+//   }
+//
+//   &,
+//   &-overlay {
+//     max-width: 1500px;
+//     margin: auto;
+//   }
+//   &-overlay {
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 141px;
+//     color: $white;
+//     height: $collage-image-size * 2;
+//
+//     background: rgba(0, 0, 0, 0.3);
+//     &-text {
+//       padding: 2rem;
+//     }
+//     h1,
+//     p {
+//       max-width: 1000px;
+//       margin-top: 0;
+//       margin-bottom: 1rem;
+//     }
+//   }
+//
+//   @include media('<=sm') {
+//     column-count: 2;
+//     h1 {
+//       line-height: 1.15;
+//       font-size: 3rem;
+//     }
+//   }
+//   @include media('<=xs') {
+//     column-count: 1;
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+//   }
+// }
 
 .category {
   &-wrapper {
